@@ -1,16 +1,27 @@
-# posts_clean_arch
+# Flutter Posts App with Clean Architecture
 
-A new Flutter project.
+A simple Flutter application that fetches posts from a remote API (JSONPlaceholder) and displays them using a Clean Architecture pattern. The project demonstrates state management using `BLoC`, dependency injection with `GetIt`, and error handling using sealed classes.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Fetch posts from a remote API (https://jsonplaceholder.typicode.com/posts)
+- State management using BLoC with different states: Loading, Success, Error
+- Clean Architecture structure with separation of concerns (Presentation, Domain, Data layers)
+- Dependency Injection using `GetIt`
+- Real HTTP requests using `http` package
+- Sealed classes for handling states and events
+- Error handling and loading states
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter**: Cross-platform mobile development framework
+- **Dart**: The programming language for Flutter
+- **BLoC (Business Logic Component)**: For state management
+- **GetIt**: Simple dependency injection framework for Dart and Flutter
+- **http**: For making HTTP requests
+- **Equatable**: For value equality in Dart classes
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Structure
+
+The project follows a Clean Architecture structure:
+
