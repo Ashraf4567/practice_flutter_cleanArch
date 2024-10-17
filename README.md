@@ -28,19 +28,31 @@ The project follows a clean architecture pattern, which separates the applicatio
 
 ## Project Structure
 
-ib/
-├── data/
-│ ├── models/ # Data models
-│ └── repositories/ # Repository implementations
-├── di/ # Dependency injection setup
-├── domain/
-│ ├── entities/ # Domain entities
-│ ├── repositories/ # Repository interfaces
-│ └── usecases/ # Use cases
-├── presentation/
-│ ├── blocs/ # BLoC classes
-│ ├── pages/ # UI pages
-│ └── widgets/ # Reusable widgets
-└── main.dart # Entry point of the application
+### Project Structure
+
+The project is structured into the following layers:
+
+#### 1. Data Layer
+* **data/**
+	+ **models/**: Data models
+	+ **repositories/**: Repository implementations
+
+#### 2. Dependency Injection
+* **di/**: Dependency injection setup
+
+#### 3. Domain Layer
+* **domain/**
+	+ **entities/**: Domain entities
+	+ **repositories/**: Repository interfaces
+	+ **usecases/**: Use cases
+
+#### 4. Presentation Layer
+* **presentation/**
+	+ **blocs/**: BLoC classes
+	+ **pages/**: UI pages
+	+ **widgets/**: Reusable widgets
+
+#### 5. Entry Point
+* **main.dart**: Entry point of the application
 
 
